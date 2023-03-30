@@ -1,7 +1,8 @@
 #include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int getMin (int num[], int n){
-    int min = 0;
+    int min = INT_MIN;
     for(int i =0; i<n;i++){
         if(num[i]==min){
             min = num[i];
@@ -10,7 +11,7 @@ int getMin (int num[], int n){
     return min;
 }
 int getMax (int num[], int n){
-    int max = 100;
+    int max =INT_MAX;
     for(int i =0; i<n;i++){
         if(num[i]==max){
             max = num[i];
